@@ -1,0 +1,119 @@
+
+header {
+  background-color: rgba(10,15,56,0.9);
+  padding: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(10,15,56,0.9);
+  padding: 30px;
+  text-align: center;
+  color: white;
+  margin-top:40px;
+}
+.cso-image-div {
+    height: 90px;
+    background-image: url(http://www.csocarlton.com.au/wp-content/uploads/2017/05/cso-carlton-logo-navy1_whitetextonly.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+  margin:0;
+}
+.login-wrapper {
+  max-width:700px;
+  margin:0 auto;
+}
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:rgba(10,15,56,0.9);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .login {
+    text-align: center;
+    /* margin: 24px 0 12px 0; */
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .accepted-label {
+    font-size: 18px;
+  }
+  .login-form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .payment-form {
+    padding: 20px;
+    max-width:460px;
+    margin-left: 20px;
+  }
+  .icon-container >i {
+      font-size: 25px;
+  }

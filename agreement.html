@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lease Agreement</title>
+<link rel="stylesheet" type="text/css" href="css/agreement.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+        <div class='cso-image-div'>
+        </div>
+        <button onclick="location.href='login.html'"  type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+                </button>
+    </header>
+       <form action="/regis" method="post">
+    <div class='lease-agreement'>
+        <h1>Lease Agreement</h1>
+        <div class='lease-agreement-div'>
+            <h3>Agreement Information</h3>
+            <label>Agreement Date:</label>
+            <input type='date' name='agreementDate'/>
+            <label>Start Date:</label>
+            <input type='date' name='startDate'/>
+            <div >
+                <label>Agreement No. :</label>
+                <input name='agreementNo'/>
+            </div>
+            <div > 
+                <label>Company Name:</label>
+                <input name='companyName'/>
+            </div>
+        </div>
+        <div class='lease-agreement-div'>
+            <h3>Contact Information</h3>
+            <div>
+                <label>Contact Name: </label>
+                <input name='username'/>
+            </div>
+            <div>
+                <label>Address:</label>
+                <input name='street'/>
+            </div>
+            <div>
+                <label>password:</label>
+                <input name='password'/>
+            </div>
+            <div>
+                <label>State:</label>
+                <input name='state'/>
+                <label>Postal Code:</label>
+                <input name='postCode'/>
+            </div>
+            <div>
+                <label>Phone:</label>
+                <input name='phone'/>
+                <label>Email:</label>
+                <input name='email'/>
+            </div>
+        </div>
+        <div class='lease-agreement-div' >
+            <h3>Furniture</h3>
+            <div>
+                <label>FurnitureName:</label>
+                <input name='furnitureName'/>
+                <label> Quantity:</label>
+                <input name='Quantity'/>
+            </div>
+        </div>
+        <div class='lease-agreement-div'>
+            <h3>SundryItems</h3>
+        </div>
+        <div class='lease-agreement-div'>
+            <label>Telephonic line:</label>
+            <input name='telephonicLine'/>
+        </div>
+        <div class='lease-agreement-div'>
+            <label>Car Parking:</label>
+            <input name='carParking'/>
+        </div>
+    </div>
+    <div class='lease-agreement'>
+        <label> Total Monthly Rate: </label>
+        <input name='totalMonthlyRate'/>
+
+    </div>
+    <div class='lease-agreement'>
+        <div class='lease-agreement-div'>
+                <h3>Refundable Items</h3>
+                <div>
+                    <label>Security Deposit:</label>
+                    <input name='securityDeposit'/>
+                </div>
+                <div>
+                    <label>key set:</label>
+                    <input name='keySet'/>
+                </div>
+                <div>
+                    <label>Boom gate Remote:</label>
+                    <input name='boomGateRemote'/>
+                </div>
+            </div>
+    </div>
+      <button type="submit">Submit</button>
+       </form>
+    <div class='termsAndConditions'>
+        <h3> Terms and conditions</h3>
+        <p>
+            This Agreement incorporates our terms of business set out on the attached terms and conditions which you confirm you have read 
+            and understood. We both agree to comply with those terms and our obligations as set out in them . This agreement is binding from the agreeemnt date and may not be terminated 
+            once it is made.
+        </p>
+    </div>
+    <footer></footer>   
+</body>
+</html>

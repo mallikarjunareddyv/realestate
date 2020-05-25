@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lease Agreement</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class='cso-image-div'>
+        </div>
+        <!-- <button class="back">Back</button> -->
+    </header>
+    <form class ='payment-form'action="/payment" method="post">
+    <div class="column-1">
+        <div class="small-inputs">
+            <h1>Payment</h1>
+            <label for="fname" class='accepted-label'>Accepted Cards</label><br/><br/>
+            <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div><br/><br/>
+            <label for="cardholderName">Cardholder's Name</label> <input id="cardholder" type="text" name='cardholder'/>
+            <div><label for="date">exp date</label> <input id="date" type="text" placeholder="MM / YY" name='expdate'/></div>
+            <div><label for="verification">Cvv no</label> <input id="verification" type="password" name='cvv'/></div>
+            <div><label for="cardnumber">Card Number</label> <input id="cardnumber" type="password" name='cardno'/></div>
+            <button class="btn next-btn">submit</button>
+        </div>
+    </div>
+    </form>
+    <!-- <footer></footer> -->
+</body>
+</html>

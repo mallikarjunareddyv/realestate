@@ -1,0 +1,54 @@
+header {
+    background-color: rgba(10,15,56,0.9);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+  }
+  header>button {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(10,15,56,0.9);
+    padding: 30px;
+    /* text-align: center; */
+    color: white;
+    margin-top:40px;
+  }
+  .cso-image-div {
+      height: 90px;
+      background-image: url(http://www.csocarlton.com.au/wp-content/uploads/2017/05/cso-carlton-logo-navy1_whitetextonly.png);
+      background-size: 400px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+.lease-agreement {
+    border: 2px solid #ded6d6;
+    margin: 2rem 15% 2rem 15%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background-color:#f5f2f2;
+}
+.termsAndConditions {
+    margin: 2rem 15% 7rem 15%;
+}
+h1 {
+    text-align: center;
+}
+.lease-agreement-div {
+    margin-left:1.5rem;
+}
+input, label {
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+input {
+    border: 1px solid #ded6d6;
+}

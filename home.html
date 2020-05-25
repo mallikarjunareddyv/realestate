@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lease Agreement</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class='cso-image-div'>
+        </div>
+        <button onclick="location.href='login.html'" type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+`        </button>
+    </header>
+    <form action="/home" method="post">
+        <div class="search-wrapper">
+            <ul class="list">
+                <li>
+                    <select id="office" name="office">
+                        <option disabled selected value>Office</option>
+                        <option value="office1">Office 1</option>
+                        <option value="office2">Office 2</option>
+                        <option value="office3">Office 3</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="space" name="space">
+                        <option disabled selected value>Available Space</option>
+                        <option value="650">650sft</option>
+                        <option value="850">850sft</option>
+                        <option value="1050">1050sft</option>
+                        <option value="1150">1150sft</option>
+                        <option value="1400">1400sft</option>
+                    </select>
+
+                </li>
+                <li>
+                    <select id="price" name="price">
+                        <option disabled selected value>Price</option>
+                        <option value="0to100">0 - $50</option>
+                        <option value="50to100">$50 - $100</option>
+                        <option value="100to150">$100 - $150</option>
+                        <option value="150to200">$150 - $200</option>
+                        <option value="200to250">$200 - $250</option>
+                    </select>
+
+                </li>
+                <li>
+                    <label for="From">From:</label>
+                    <input type="date" id="from" name="dateFrom">
+                    <label for="From">To:</label>
+                    <input type="date" id="to" name="dateTo">
+                </li>
+                <li>
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </div>
+    </form>
+        <div>
+            <h3 class='housesTitle'>Corporate offices for Rent in Melbourne</h3>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./images/office1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./images/office2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./images/office4.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+    <footer>
+        <div>
+            <h4>Contact us</h4>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
